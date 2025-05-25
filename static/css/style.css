@@ -1,0 +1,258 @@
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4b5563;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6b7280;
+}
+
+textarea::placeholder {
+    color: #9ca3af;
+}
+
+textarea {
+    resize: none;
+}
+
+.z-50 {
+    z-index: 50;
+}
+
+.z-40 {
+    z-index: 40;
+}
+
+.z-60 {
+    z-index: 60;
+}
+
+.sortable-ghost {
+    opacity: 0.4;
+    background: #374151;
+    border-style: dashed;
+}
+
+.sortable-chosen {
+    opacity: 0.9;
+    transform: scale(1.03);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+    cursor: grabbing !important;
+}
+
+.note-card {
+    cursor: move;
+}
+
+.note-text-content {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 80px;
+}
+
+#note-modal {
+    transition: opacity 0.2s ease-in-out;
+}
+
+#note-modal.hidden {
+    display: none;
+}
+
+#close-modal {
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: bold;
+    color: #9ca3af;
+}
+
+#close-modal:hover {
+    color: #ffffff;
+}
+
+.note-card:not(.sortable-chosen) {
+    cursor: pointer;
+}
+
+.note-card button {
+    cursor: pointer;
+    width: 32px;
+    /* Lebar tombol ikon */
+    height: 32px;
+    /* Tinggi tombol ikon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style untuk placeholder ikon (Anda bisa menaruh SVG/Font Awesome di sini) */
+.icon-placeholder::before {
+    content: '';
+    /* Kosong, atau bisa diisi sementara 'X' atau 'P' */
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    /* background-color: white; (Contoh jika ingin ada tanda) */
+    /* Bisa juga menggunakan font-size jika pakai ikon font */
+}
+
+/* --- Style untuk Tombol Hover --- */
+.note-card {
+    position: relative;
+    /* Wajib agar tombol bisa diposisikan absolut */
+    overflow: hidden;
+    /* Sembunyikan tombol jika keluar batas (opsional) */
+    cursor: move;
+    /* Kursor default untuk drag */
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+    /* Transisi untuk hover card */
+}
+
+.note-card:not(.sortable-chosen) {
+    cursor: pointer;
+    /* Kursor jika bisa diklik (modal) */
+}
+
+.button-group {
+    position: absolute;
+    bottom: 0.75rem;
+    /* Jarak dari bawah (12px) - Sesuaikan */
+    right: 0.75rem;
+    /* Jarak dari kanan (12px) - Sesuaikan */
+    display: flex;
+    /* Sudah ada dari Tailwind */
+    gap: 0.5rem;
+    /* Jarak antar tombol (8px) - Sesuaikan */
+    opacity: 0;
+    /* Sembunyikan secara default */
+    transform: translateY(10px);
+    /* Geser sedikit ke bawah */
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    /* Animasi mulus */
+    pointer-events: none;
+    /* Jangan bisa diklik saat tersembunyi */
+    z-index: 10;
+    /* Pastikan di atas elemen lain */
+}
+
+/* Tampilkan tombol saat kartu di-hover */
+.note-card:hover .button-group {
+    opacity: 1;
+    /* Tampilkan */
+    transform: translateY(0);
+    /* Kembalikan ke posisi semula */
+    pointer-events: auto;
+    /* Buat bisa diklik */
+}
+
+.note-card button {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+    /* Sedikit rounded */
+}
+
+/* Hapus style .icon-placeholder jika tidak dipakai */
+.icon-image {
+    width: 20px;
+    height: 20px;
+}
+
+/* Hilangkan border bawah kartu jika ada */
+.button-group {
+    border-top: none !important;
+    /* Hapus border atas jika ada */
+}
+
+.markdown-content p {
+    margin-bottom: 0.75rem;
+    /* Beri jarak antar paragraf */
+    line-height: 1.6;
+    /* Atur spasi baris */
+}
+
+.markdown-content strong {
+    color: #ffffff;
+    /* Buat teks tebal menjadi putih */
+    font-weight: 700;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+    list-style-position: inside;
+    /* Posisi bullet/nomor di dalam */
+    padding-left: 1rem;
+    /* Beri sedikit padding kiri */
+    margin-bottom: 0.75rem;
+    /* Jarak bawah untuk daftar */
+}
+
+.markdown-content ul {
+    list-style-type: disc;
+    /* Gaya bullet untuk ul */
+}
+
+.markdown-content ol {
+    list-style-type: decimal;
+    /* Gaya nomor untuk ol */
+}
+
+.markdown-content li {
+    margin-bottom: 0.25rem;
+    /* Jarak antar item daftar */
+}
+
+.markdown-content code {
+    background-color: #1f2937;
+    /* Latar belakang untuk kode inline */
+    color: #e5e7eb;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-size: 0.9em;
+}
+
+.markdown-content pre {
+    background-color: #111827;
+    /* Latar belakang untuk blok kode */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    /* Scroll horizontal jika kode panjang */
+    margin-bottom: 1rem;
+}
+
+.markdown-content pre code {
+    background-color: transparent;
+    /* Hapus bg di dalam pre */
+    padding: 0;
+}
+
+#delete-confirm-modal:not(.hidden) > div {
+    transform: scale(1);
+    opacity: 1;
+}
