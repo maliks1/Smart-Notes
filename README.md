@@ -55,8 +55,8 @@ Ikuti langkah-langkah berikut untuk menjalankan Smart Notes di komputer lokal An
 
 2.  **Kloning Repositori:**
     ```bash
-    git clone https://github.com/maliks1/Capstone-Project.git
-    cd Capstone-Project
+    git https://github.com/maliks1/Smart-Notes.git
+    cd Smart-Notes
     ```
     *(Jika Anda tidak menggunakan Git, cukup unduh dan ekstrak file proyek, lalu buka terminal/CMD di folder tersebut)*
 
