@@ -13,6 +13,6 @@
   "includeFiles": [
      "static/**",
      "templates/**",
-     "catatan.json" 
+     "tmp/**"
   ]
 }
