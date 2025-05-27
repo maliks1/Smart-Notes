@@ -7,21 +7,12 @@
     }
   ],
   "routes": [
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/static/(.*)",
-      "dest": "/static/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "app.py"
-    }
+    { "src": "/static/(.*)", "dest": "/static/$1" },
+    { "src": "/(.*)", "dest": "app.py" }
   ],
   "includeFiles": [
-    "static/**",
-    "templates/**",
-    "catatan.json"
+     "static/**",
+     "templates/**",
+     "catatan.json" 
   ]
 }
