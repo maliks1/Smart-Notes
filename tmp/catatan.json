@@ -1,15 +1,11 @@
 [
     {
-        "id": "4afe0672-0e18-4318-8df2-6116af92550d",
-        "text": "susu 2, telur 3 nasi padang 4"
+        "id": "example-note-3",
+        "text": "Ide Proyek Baru: Bagaimana jika kita membuat sistem rekomendasi film berbasis AI untuk Smart Notes? Kita bisa menganalisis catatan tentang film yang disukai pengguna. Mungkin pakai collaborative filtering aaatau content-based."
     },
     {
         "id": "example-note-2",
         "text": "Undangan ulang tahun Budi:\nSabtu, 31 Mei 2025\nPukul 19:00\nDi Kediaman Budi, Jl. Merdeka No. 5\nMohon konfirmasi kehadiran."
-    },
-    {
-        "id": "example-note-3",
-        "text": "Ide Proyek Baru: Bagaimana jika kita membuat sistem rekomendasi film berbasis AI untuk Smart Notes? Kita bisa menganalisis catatan tentang film yang disukai pengguna. Mungkin pakai collaborative filtering aaatau content-based."
     },
     {
         "id": "example-note-4",
@@ -18,10 +14,6 @@
     {
         "id": "example-note-1",
         "text": "Rapat tim mingguan akan diadakan pada 28 Mei 2025 jam 10:00 di Ruang Meeting Cendana. Agenda: review progress Q2 dan rencana Q3. Hadir: Budi, Sinta, Rian.\n\nSabtu ke pasar"
-    },
-    {
-        "id": "example-note-8",
-        "text": "Pentingnya Keamanan Siber di Era Digital:\nKeamanan siber bukan lagi sekadar pilihan, melainkan keharusan. Dengan meningkatnya ketergungan pada teknologi digital, data pribadi dan institusional menjadi semakin rentan terhadap serangan. Ancaman seperti phishing, malware, ransomware, dan SQL Injection dapat menyebabkan kerugian finansial yang signifikan, kerusakan reputasi, dan bahkan mengganggu operasional vital. Oleh karena itu, investasi dalam infrastruktur keamanan yang kuat, pelatihan kesadaran siber bagi karyawan, dan penerapan praktik terbaik seperti enkripsi data, otentikasi multi-faktor, serta pembaruan sistem secara berkala, menjadi sangat krusial untuk melindungi aset digital kita."
     },
     {
         "id": "example-note-5",
@@ -36,7 +28,7 @@
         "text": "Pelajari tentang cara kerja API Replicate lebih dalam dan coba implementasikan model Granite untuk tugas ringkasan teks yang lebih kompleks."
     },
     {
-        "id": "37ec9bd4-df5f-4389-8e34-dbbfe11d5972",
-        "text": "asd"
+        "id": "example-note-8",
+        "text": "Pentingnya Keamanan Siber di Era Digital:\nKeamanan siber bukan lagi sekadar pilihan, melainkan keharusan. Dengan meningkatnya ketergungan pada teknologi digital, data pribadi dan institusional menjadi semakin rentan terhadap serangan. Ancaman seperti phishing, malware, ransomware, dan SQL Injection dapat menyebabkan kerugian finansial yang signifikan, kerusakan reputasi, dan bahkan mengganggu operasional vital. Oleh karena itu, investasi dalam infrastruktur keamanan yang kuat, pelatihan kesadaran siber bagi karyawan, dan penerapan praktik terbaik seperti enkripsi data, otentikasi multi-faktor, serta pembaruan sistem secara berkala, menjadi sangat krusial untuk melindungi aset digital kita."
     }
 ]
