@@ -21,7 +21,7 @@ else:
 MODEL = "ibm-granite/granite-3.3-8b-instruct"
 
 # Pengaturan Penyimpanan Catatan (File JSON)
-NOTES_FILE = 'catatan.json'  # Nama file JSON untuk menyimpan catatan
+NOTES_FILE = '/tmp/catatan.json'  # Nama file JSON untuk menyimpan catatan
 
 
 def load_notes():
